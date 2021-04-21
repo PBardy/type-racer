@@ -9,7 +9,7 @@ export default class SecureRouter extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route path="/" component={HomeView} exact />
+          <Route path="/" component={RaceView} exact />
           <Route path="/race" component={RaceView} exact />
         </Switch>
       </Router>
