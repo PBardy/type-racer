@@ -1,0 +1,68 @@
+.race-text-container {
+  padding: 30px 025px;
+  border-radius: 6px;
+  background-color: var(--black-2);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr;
+  grid-gap: 20px 0;
+  font-size: 18px;
+}
+
+.race-text__variables {
+  display: grid;
+  font-weight: bold;
+  grid-template-columns: 1fr auto;
+  grid-gap: 0px 10px;
+}
+
+.race-text__variables .timer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0px 10px;
+}
+
+.race-text__display {
+  line-height: 26px;
+}
+
+.race-text__input {
+  width: 100%;
+}
+
+.race-text__input input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  background-color: var(--black-4);
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  text-indent: 15px;
+  color: inherit;
+  font-size: inherit;
+}
+
+.race-text__input input.incorrect {
+  color: var(--white-1);
+  background-color: var(--red-1);
+}
+
+.race-text__options {
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  grid-auto-flow: column;
+  grid-gap: 0px 15px;
+  grid-template-columns: 1fr;
+}
+
+.race-text__display .word.highlighted {
+  color: var(--purple-1);
+}
+
+.race-text__display .letter.highlighted {
+  color: var(--green-1);
+}
